@@ -33,9 +33,9 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
 </figure>
 
 ## Results
-<div style="display: flex; justify-content: center; gap: 20px;">
+<div style="display: flex; justify-content: center; gap: 10px;">
 
-  <figure style="width: 48%; text-align: center;">
+  <figure style="width: 50%; text-align: center;">
       <img src="figures/16.png" style="width: 100%;">
       <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
           <strong>Spectrogram comparisons for the 8 kHz to 16 kHz bandwidth expansion task.</strong>
@@ -43,8 +43,8 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
       </figcaption>
   </figure>
 
-  <figure style="width: 48%; text-align: center;">
-      <img src="figures/44.png" style="width: 100%;">
+  <figure style="width: 50%; text-align: center;">
+      <img src="figures/16.png" style="width: 100%;">
       <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
           <strong>Spectrogram comparisons for the 8 kHz to 44.1 kHz bandwidth expansion task.</strong>
           Spectrogram comparison between the 8 kHz input, the 44.1 kHz ground truth (GT), and model outputs, including NUWave2, AP-BWE, FlowHigh, and the proposed CodecFlow.
