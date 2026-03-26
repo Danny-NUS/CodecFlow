@@ -63,7 +63,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             <td><center>Input</center></td>
             <td><center>Nu-Wave2</center></td>
             <td><center>AP-BWE</center></td>
-            <td><center>Pre-Painter</center></td>
+            <td><center>Fre-Painter</center></td>
            <td><center>FlowHigh</center></td>
            <td><center>CodecFlow</center></td>
         </tr>
@@ -71,111 +71,111 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
         <tr>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
+                  <source src="16k/gt/fsem0_si1828_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/Reference.wav" type="audio/mpeg">
+                  <source src="16k/input/fsem0_si1828_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/maskgct.wav" type="audio/mpeg">
+                  <source src="16k/nuwave2/fsem0_si1828_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/vevo.wav" type="audio/mpeg">
+                  <source src="16k/APBWE/fsem0_si1828_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/ours.wav" type="audio/mpeg">
+                  <source src="16k/FrePainter/fsem0_si1828_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
+                  <source src="16k/flowhigh/fsem0_si1828_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
+                  <source src="16k/CodecFlow/fsem0_si1828_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
         </tr>
 
         <tr>
-            <td><center><img src="seen/demo-01/GT.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/Reference.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/maskgct.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/vevo.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/ours.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/flowhigh.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/codecflow.png" width="130px"></center></td>
+            <td><center><img src="16k/gt/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/input/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/nuwave2/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/APBWE/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/FrePainter/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/flowhigh/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/CodecFlow/fsem0_si1828_8k.png" width="130px"></center></td>
         </tr>
 
         <tr>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
+                  <source src="16k/gt/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/Reference.wav" type="audio/mpeg">
+                  <source src="16k/input/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/maskgct.wav" type="audio/mpeg">
+                  <source src="16k/nuwave2/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/vevo.wav" type="audio/mpeg">
+                  <source src="16k/APBWE/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/ours.wav" type="audio/mpeg">
+                  <source src="16k/FrePainter/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
+                  <source src="16k/flowhigh/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
+                  <source src="16k/CodecFlow/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
         </tr>
 
         <tr>
-            <td><center><img src="seen/demo-01/GT.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/Reference.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/maskgct.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/vevo.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/ours.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/flowhigh.png" width="130px"></center></td>
-            <td><center><img src="seen/demo-01/codecflow.png" width="130px"></center></td>
+            <td><center><img src="16k/gt/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/input/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/nuwave2/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/APBWE/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/FrePainter/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/flowhigh/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/CodecFlow/mbdg0_si1463_8k.png" width="130px"></center></td>
         </tr>
 
         <tr style="background-color: #F0EFF8;">
@@ -189,7 +189,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             <td><center>Input</center></td>
             <td><center>Nu-Wave2</center></td>
             <td><center>AP-BWE</center></td>
-            <td><center>Pre-Painter</center></td>
+            <td><center>Fre-Painter</center></td>
            <td><center>FlowHigh</center></td>
            <td><center>CodecFlow</center></td>
         </tr>
@@ -314,19 +314,6 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
     pointer-events: none;
     background: linear-gradient(to right, rgba(255,255,255,0), white);
   "></div>
-
-  <!-- 箭头提示 -->
-  <div style="
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #888;
-    pointer-events: none;
-  ">
-    →
-  </div>
   
   </div>
 
