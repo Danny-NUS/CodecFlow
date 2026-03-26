@@ -365,7 +365,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="ablation/16k/CodecReg/fsem0_si1828_8k.wav" type="audio/mpeg">
+                  <source src="ablation/16k/CodecReg/fnmr0_si769_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
@@ -377,7 +377,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="ablation/16k/CFM-UConf/fsem0_si1828_8k.wav" type="audio/mpeg">
+                  <source src="ablation/16k/CFM-Uconf/fsem0_si1828_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
@@ -392,16 +392,16 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
         <tr>
             <td><center><img src="ablation/16k/gt/fsem0_si1828.png" width="130px"></center></td>
             <td><center><img src="ablation/16k/input/fsem0_si1828_8k.png" width="130px"></center></td>
-            <td><center><img src="ablation/16k/CodecReg/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CodecReg/fnmr0_si769_8k.png" width="130px"></center></td>
             <td><center><img src="ablation/16k/CFM-Conf/fsem0_si1828_8k.png" width="130px"></center></td>
-            <td><center><img src="ablation/16k/CFM-UConf/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CFM-Uconf/fsem0_si1828_8k.png" width="130px"></center></td>
             <td><center><img src="ablation/16k/CodecFlow/fsem0_si1828.png" width="130px"></center></td>
         </tr>
 
         <tr>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="ablation/16k/gt/mbdg0_si1463_8k.wav" type="audio/mpeg">
+                  <source src="ablation/16k/gt/mbdg0_si1463.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
@@ -425,7 +425,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="ablation/16k/CFM-UConf/mbdg0_si1463_8k.wav" type="audio/mpeg">
+                  <source src="ablation/16k/CFM-Uconf/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
@@ -438,11 +438,11 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
         </tr>
 
         <tr>
-            <td><center><img src="ablation/16k/gt/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/gt/mbdg0_si1463.png" width="130px"></center></td>
             <td><center><img src="ablation/16k/input/mbdg0_si1463_8k.png" width="130px"></center></td>
             <td><center><img src="ablation/16k/CodecReg/mbdg0_si1463_8k.png" width="130px"></center></td>
             <td><center><img src="ablation/16k/CFM-Conf/mbdg0_si1463_8k.png" width="130px"></center></td>
-            <td><center><img src="ablation/16k/CFM-UConf/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CFM-Uconf/mbdg0_si1463_8k.png" width="130px"></center></td>
             <td><center><img src="ablation/16k/CodecFlow/mbdg0_si1463_8k.png" width="130px"></center></td>
         </tr>
 
@@ -488,7 +488,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="ablation/44.1k/CFM-UConf/p225_298_mic1.wav" type="audio/mpeg">
+                  <source src="ablation/44.1k/CFM-Uconf/p225_298_mic1.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
@@ -505,7 +505,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             <td><center><img src="ablation/44.1k/input/p225_298_mic1.png" width="130px"></center></td>
             <td><center><img src="ablation/44.1k/CodecReg/p225_298_mic1.png" width="130px"></center></td>
             <td><center><img src="ablation/44.1k/CFM-Conf/p225_298_mic1.png" width="130px"></center></td>
-            <td><center><img src="ablation/44.1k/CFM-UConf/p225_298_mic1.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/CFM-Uconf/p225_298_mic1.png" width="130px"></center></td>
             <td><center><img src="ablation/44.1k/CodecFlow/p225_298_mic1.png" width="130px"></center></td>
         </tr>
 
@@ -536,7 +536,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="ablation/44.1k/CFM-UConf/p226_027_mic2.wav" type="audio/mpeg">
+                  <source src="ablation/44.1k/CFM-Uconf/p226_027_mic2.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
@@ -553,7 +553,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             <td><center><img src="ablation/44.1k/input/p226_027_mic2.png" width="130px"></center></td>
             <td><center><img src="ablation/44.1k/CodecReg/p226_027_mic2.png" width="130px"></center></td>
             <td><center><img src="ablation/44.1k/CFM-Conf/p226_027_mic2.png" width="130px"></center></td>
-            <td><center><img src="ablation/44.1k/CFM-UConf/p226_027_mic2.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/CFM-Uconf/p226_027_mic2.png" width="130px"></center></td>
             <td><center><img src="ablation/44.1k/CodecFlow/p226_027_mic2.png" width="130px"></center></td>
         </tr>
 
