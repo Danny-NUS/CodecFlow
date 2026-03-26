@@ -47,7 +47,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
     </figcaption>
 </figure>
 
-## Synthesis Results on Seen Singers
+## Baseline Comparison
 <table style="font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
     <tbody>
        <tr>
@@ -294,7 +294,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
     </tbody>
 </table>
 
-## Synthesis Results on Unseen Singers
+## Ablation Study
 <table style="font-family: 'Times New Roman', 'SimSun', '宋体', serif; width: 100%; max-width: 100%;  border-collapse: collapse;">
     <tbody>
        <tr style="background-color: #EAF2E8;">
@@ -772,15 +772,5 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
     </tbody>
         
 </table>
-
-<div>
-    <center>
-      <font face="Palatino Linotype, Book Antiqua, Palatino, serif">
-        <i>
-          We sincerely thank all the singers for kindly providing the prompt recordings used in our demos.
-        </i>
-      </font>
-    </center>
-</div>
 
 
