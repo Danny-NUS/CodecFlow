@@ -52,7 +52,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
     <tbody>
 
         <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: center; padding: 6px 10px; font-weight: bold;">
+          <td colspan="7" style="text-align: center; padding: 6px 10px; font-weight: bold;">
             Bandwidth Extension from 8 kHz to 16 kHz
           </td>
         </tr>
@@ -113,6 +113,16 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
         </tr>
 
         <tr>
+            <td><center><img src="seen/demo-01/GT.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/Reference.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/maskgct.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/vevo.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/ours.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/flowhigh.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/codecflow.png" width="130px"></center></td>
+        </tr>
+
+        <tr>
             <td>
                 <audio controls style="width: 130px;">
                   <source src="seen/demo-01/GT.wav" type="audio/mpeg">
@@ -157,8 +167,18 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             </td>
         </tr>
 
+        <tr>
+            <td><center><img src="seen/demo-01/GT.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/Reference.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/maskgct.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/vevo.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/ours.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/flowhigh.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/codecflow.png" width="130px"></center></td>
+        </tr>
+
         <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: center; padding: 6px 10px; font-weight: bold;">
+          <td colspan="7" style="text-align: center; padding: 6px 10px; font-weight: bold;">
             Bandwidth Extension from 8 kHz to 44.1 kHz
           </td>
         </tr>
@@ -219,6 +239,16 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
         </tr>
 
         <tr>
+            <td><center><img src="seen/demo-01/GT.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/Reference.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/maskgct.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/vevo.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/ours.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/flowhigh.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/codecflow.png" width="130px"></center></td>
+        </tr>
+
+        <tr>
             <td>
                 <audio controls style="width: 130px;">
                   <source src="seen/demo-01/GT.wav" type="audio/mpeg">
@@ -261,6 +291,16 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
                   Your browser does not support the audio tag.
                 </audio>
             </td>
+        </tr>
+
+        <tr>
+            <td><center><img src="seen/demo-01/GT.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/Reference.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/maskgct.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/vevo.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/ours.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/flowhigh.png" width="130px"></center></td>
+            <td><center><img src="seen/demo-01/codecflow.png" width="130px"></center></td>
         </tr>
     </tbody>
 </table>
