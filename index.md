@@ -12,20 +12,40 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
 </div>
 
 ## Method
-<div style="text-align: center;">
-    <img src="figures/figure2_new.pdf" width="1000px">
-    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;"> \textbf{V/UV segmentation and LR–HR embedding cosine similarity over time.} Upper: spectrogram with word boundaries and V/UV labels. Lower: cosine similarity; orange dashed regions mark UV-aligned drops, blue dashed line shows the global mean.</figcaption>
-</div>
+<figure style="text-align: center;">
+    <img src="figures/vuv.png" width="1000px">
+    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
+        <strong>V/UV segmentation and LR–HR embedding cosine similarity over time.</strong>
+        Upper: spectrogram with word boundaries and V/UV labels. 
+        Lower: cosine similarity; orange dashed regions mark UV-aligned drops, 
+        blue dashed line shows the global mean.
+    </figcaption>
+</figure>
 
-<div style="text-align: center;">
-    <img src="figures/overall.pdf" width="1000px">
-    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;"> \textbf{V/UV segmentation and LR–HR embedding cosine similarity over time.} Upper: spectrogram with word boundaries and V/UV labels. Lower: cosine similarity; orange dashed regions mark UV-aligned drops, blue dashed line shows the global mean.</figcaption>
-</div>
+<figure style="text-align: center;">
+    <img src="figures/overall.png" width="1000px">
+    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
+        <strong>An overview of the proposed CodecFlow framework.</strong>
+        (a) the overall model pipeline, 
+        (b) the architecture of the voicing extractor, and 
+        (c) the architecture of the flow prediction network from the flow embedding converter (FEC).
+    </figcaption>
+</figure>
 
-<div style="text-align: center;">
-    <img src="figures/overall.pdf" width="1000px">
-    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;"> \textbf{An overview of the proposed CodecFlow framework.} (a) the overall model pipeline, (b) the architecture of the voicing extractor, and (c) the architecture of the flow prediction network from the flow embedding converter (FEC). </figcaption>
-</div>
+## Results
+<figure style="text-align: center;">
+    <img src="figures/16.png" width="1000px">
+    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
+        <strong>Spectrogram comparisons for the 8 kHz to 16 kHz bandwidth expansion task.</strong> Spectrogram comparison between the 8 kHz input, the 16 kHz ground truth (GT), and model outputs, including NUWave2, AP-BWE, FlowHigh, and the proposed CodecFlow.
+    </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+    <img src="figures/44.png" width="1000px">
+    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
+        <strong>Spectrogram comparisons for the 8 kHz to 44.1 kHz bandwidth expansion task.</strong> Spectrogram comparison between the 8 kHz input, the 44.1 kHz ground truth (GT), and model outputs, including NUWave2, AP-BWE, FlowHigh, and the proposed CodecFlow.
+    </figcaption>
+</figure>
 
 ## Synthesis Results on Seen Singers
 <table style="font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
