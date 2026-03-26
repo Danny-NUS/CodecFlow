@@ -50,18 +50,21 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
 ## Baseline Comparison
 <table style="font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
     <tbody>
-       <tr>
-            <td nowrap><center>GT (Codec)</center></td>
-            <td><center>Reference</center></td>
-            <td><center>MaskGCT</center></td>
-            <td><center>Vevo 1.5</center></td>
-           <td><center>CoMelSinger</center></td>
-        </tr>
 
         <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            雨会下雨会停这是不变的道理 | yu hui xia yu hui ting zhe shi bu bian de dao li
+          <td colspan="5" style="text-align: center; padding: 6px 10px; font-weight: bold;">
+            Bandwidth Extension from 8 kHz to 16 kHz
           </td>
+        </tr>
+
+       <tr>
+            <td nowrap><center>Target</center></td>
+            <td><center>Input</center></td>
+            <td><center>Nu-Wave2</center></td>
+            <td><center>AP-BWE</center></td>
+            <td><center>Pre-Painter</center></td>
+           <td><center>FlowHigh</center></td>
+           <td><center>CodecFlow</center></td>
         </tr>
 
         <tr>
@@ -95,198 +98,166 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
                   Your browser does not support the audio tag.
                 </audio>
             </td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            我听过荒芜变成热闹 | wo ting guo huang wu bian cheng re nao
-          </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
         </tr>
 
         <tr>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-02/GT.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-02/Reference.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/Reference.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-02/maskgct.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/maskgct.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-02/vevo.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/vevo.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-02/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-          眼看着灯光熄灭 | yan kan zhe deng guang xi mie
-          </td>
-        </tr>
-
-        <tr>
-            <td>
-                <audio controls style="width: 130px;">
-                  <source src="seen/demo-03/GT.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/ours.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-03/Reference.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-03/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 130px;">
-                  <source src="seen/demo-03/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 130px;">
-                  <source src="seen/demo-03/ours.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
         </tr>
 
         <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-          他说就这样去流浪 | ta shuo jiu zhe yang qu liu lang
+          <td colspan="5" style="text-align: center; padding: 6px 10px; font-weight: bold;">
+            Bandwidth Extension from 8 kHz to 44.1 kHz
           </td>
+        </tr>
+
+       <tr>
+            <td nowrap><center>Target</center></td>
+            <td><center>Input</center></td>
+            <td><center>Nu-Wave2</center></td>
+            <td><center>AP-BWE</center></td>
+            <td><center>Pre-Painter</center></td>
+           <td><center>FlowHigh</center></td>
+           <td><center>CodecFlow</center></td>
         </tr>
 
         <tr>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-04/GT.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-04/Reference.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/Reference.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-04/maskgct.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/maskgct.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-04/vevo.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/vevo.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-04/ours.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/ours.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            你献给我的西班牙馅饼 | ni xian gei wo de xi ban ya xian bing
-          </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
         </tr>
 
         <tr>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-05/GT.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-05/Reference.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/Reference.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-05/maskgct.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/maskgct.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-05/vevo.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/vevo.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-05/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            离别轻，暮然回首才被 | li bie qing, mu ran hui shou cai bei
-          </td>
-        </tr>
-
-        <tr>
-            <td>
-                <audio controls style="width: 130px;">
-                  <source src="seen/demo-06/GT.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/ours.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-06/Reference.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="seen/demo-06/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 130px;">
-                  <source src="seen/demo-06/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 130px;">
-                  <source src="seen/demo-06/ours.wav" type="audio/mpeg">
+                  <source src="seen/demo-01/GT.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
