@@ -431,7 +431,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="ablation/16k/CodecFlow/mbdg0_si1463_8k.wav" type="audio/mpeg">
+                  <source src="ablation/16k/CodecFlow/mbdg0_si1463.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
@@ -443,7 +443,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             <td><center><img src="ablation/16k/CodecReg/mbdg0_si1463_8k.png" width="130px"></center></td>
             <td><center><img src="ablation/16k/CFM-Conf/mbdg0_si1463_8k.png" width="130px"></center></td>
             <td><center><img src="ablation/16k/CFM-Uconf/mbdg0_si1463_8k.png" width="130px"></center></td>
-            <td><center><img src="ablation/16k/CodecFlow/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CodecFlow/mbdg0_si1463.png" width="130px"></center></td>
         </tr>
 
         <tr style="background-color: #EAF2E8;">
