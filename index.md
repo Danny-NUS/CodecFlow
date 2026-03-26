@@ -309,12 +309,27 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
     position: absolute;
     top: 0;
     right: 0;
-    width: 40px;
+    width: 50px;
     height: 100%;
     pointer-events: none;
     background: linear-gradient(to right, rgba(255,255,255,0), white);
-"></div>
-</div>
+  "></div>
+
+  <!-- 箭头提示 -->
+  <div style="
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+    pointer-events: none;
+  ">
+    →
+  </div>
+  
+  </div>
+
 
 ## Ablation Study
 <table style="font-family: 'Times New Roman', 'SimSun', '宋体', serif; width: 100%; max-width: 100%;  border-collapse: collapse;">
