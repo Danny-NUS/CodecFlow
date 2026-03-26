@@ -14,8 +14,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
 ## Method
 <div style="text-align: center;">
     <img src="figures/figure2_new.pdf" width="1000px">
-    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;"> \textbf{V/UV segmentation and LR–HR embedding cosine similarity over time.} Upper: spectrogram with word boundaries and V/UV labels. Lower: cosine similarity; orange dashed
-regions mark UV-aligned drops, blue dashed line shows the global mean.</figcaption>
+    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;"> \textbf{V/UV segmentation and LR–HR embedding cosine similarity over time.} Upper: spectrogram with word boundaries and V/UV labels. Lower: cosine similarity; orange dashed regions mark UV-aligned drops, blue dashed line shows the global mean.</figcaption>
 </div>
 
 <div style="text-align: center;">
