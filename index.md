@@ -330,482 +330,244 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
 
 
 ## Ablation Study
-<table style="font-family: 'Times New Roman', 'SimSun', '宋体', serif; width: 100%; max-width: 100%;  border-collapse: collapse;">
-    <tbody>
-       <tr style="background-color: #EAF2E8;">
-          <td colspan="5" style="text-align: center; padding: 6px 10px; font-weight: bold;">
-            Male Singer 1: Danny
-          </td>
-        </tr>
-        <tr>
-            <td><center>Reference</center></td>
-            <td><center>MaskGCT</center></td>
-            <td><center>Vevo 1.5</center></td>
-           <td><center>CoMelSinger</center></td>
-        </tr>
 
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            早 (G3) 些 (G3) 少 (A3) 年 (E3) 时 (G3) | zao xie shao nian shi
-          </td>
-        </tr>
-        <tr>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-01/reference.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-01/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-01/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-01/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            痛 (A2) 太 (C3) 美 (D3)，尽 (A2) 管 (C3) 再 (D3) 卑 (G2) 微 (F2) | tong tai mei, jin guan zai bei wei
-          </td>
-        </tr>
-        <tr>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-02/reference.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-02/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-02/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-02/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            多 (A2) 吹 (A2) 一 (B2) 些 (D3) 风 (G2) | duo chui yi xie feng
-          </td>
-        </tr>
-        <tr>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-03/reference.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-03/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-03/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m1/demo-03/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-        </tr>
-    </tbody>
-        
-</table>
-
-
-<table style="font-family: 'Times New Roman', 'SimSun', '宋体', serif; table-layout: fixed;">
-    <colgroup>
-        <col width="170">
-        <col width="170">
-        <col width="170">
-        <col width="170">
-      </colgroup>
-    <tbody>
-       <tr style="background-color: #EAF2E8;">
-          <td colspan="5" style="text-align: center; padding: 6px 10px; font-weight: bold;">
-            Male Singer 2: Wei
-          </td>
-        </tr>
-        <tr>
-            <td><center>Reference</center></td>
-            <td><center>MaskGCT</center></td>
-            <td><center>Vevo 1.5</center></td>
-           <td><center>CoMelSinger</center></td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500; word-break: break-word;
-      overflow-wrap: break-word;
-      white-space: normal;">
-            每 (D#3) 一 (F#3) 滴 (B3) 泪 (A#3) 水 (D#3)，都 (D#3) 向 (C#3) 你 (B2) 流 (B2) 淌 (C#3) 去 (D#3) | mei yi di lei shui, dou xiang ni liu tang qu
-          </td>
-        </tr>
-        <tr>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-01/reference.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-01/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-01/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-01/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500; word-break: break-word;
-      overflow-wrap: break-word;
-      white-space: normal;">
-            现 (D3) 在 (F3) 我 (G3) 想 (Bb3) 问 (A3) 问 (D3) 你 (Bb3) | xian zai wo xiang wen wen ni
-          </td>
-        </tr>
-        <tr>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-02/reference.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-02/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-02/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-02/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500; word-break: break-word;
-      overflow-wrap: break-word;
-      white-space: normal;">
-            烛 (C3) 光 (D3) 照 (F3) 亮 (G3) 了 (F3) 晚 (G3) 餐 (A3)，照 (A3) 不 (A3) 出 (G3) 个 (F3) 答 (G3) 案 (A3) ｜ zhu guang zhao liang le wan can, zhao bu chu ge da an
-          </td>
-        </tr>
-        <tr>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-03/reference.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-03/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-03/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/m2/demo-03/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-        </tr>
-    </tbody>
-        
-</table>
-
+<div style="position: relative; overflow-x: auto;">
 <table style="font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
     <tbody>
-    <colgroup>
-        <col width="170">
-        <col width="170">
-        <col width="170">
-        <col width="170">
-      </colgroup>
-       <tr style="background-color: #EAF2E8;">
-          <td colspan="5" style="text-align: center; padding: 6px 10px; font-weight: bold;">
-            Female Singer 1: Sveta
+
+        <tr style="background-color: #EAF2E8;">
+          <td colspan="6" style="text-align: center; padding: 6px 10px; font-weight: bold;">
+            Bandwidth Extension from 8 kHz to 16 kHz
           </td>
-        </tr>
-        <tr>
-            <td><center>Reference</center></td>
-            <td><center>MaskGCT</center></td>
-            <td><center>Vevo 1.5</center></td>
-           <td><center>CoMelSinger</center></td>
         </tr>
 
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            刻 (F4) 在 (F4) 我 (F3) 心 (Eb4) 底 (D4) 的 (D4) 名 (C4) 字 (D4) | ke zai wo xin di de ming zi
-          </td>
-        </tr>
-        <tr>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-01/reference.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-01/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-01/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-01/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
+       <tr>
+            <td nowrap><center>Target</center></td>
+            <td><center>Input</center></td>
+            <td><center>CodecReg</center></td>
+            <td><center>CFM-Conf</center></td>
+            <td><center>CFM-UConf</center></td>
+           <td><center>CodecFlow</center></td>
         </tr>
 
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            刻 (D4) 骨 (C4) 铭 (Eb4) 心 (D4) 只 (C4) 有 (Bb3) 我 (C3) 自 (Bb3) 己 (F3) | ke gu ming xin zhi you wo zi ji
-          </td>
-        </tr>
         <tr>
             <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-02/reference.wav" type="audio/mpeg">
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/gt/fsem0_si1828.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-02/maskgct.wav" type="audio/mpeg">
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/input/fsem0_si1828_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-02/vevo.wav" type="audio/mpeg">
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/CodecReg/fsem0_si1828_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-02/ours.wav" type="audio/mpeg">
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/CFM-Conf/fsem0_si1828_8k.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/CFM-UConf/fsem0_si1828_8k.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/CodecFlow/fsem0_si1828.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
         </tr>
 
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            我 (A3) 们 (E4) 改 (E4) 变 (E4) 了 (D4) 态 (E4) 度 (D4) 接 (E4) 纳 (D4) 了 (E4) 对 (D4) 方 (D4) ｜ wo men gai bian le tai du jie na le dui fang
-          </td>
+        <tr>
+            <td><center><img src="ablation/16k/gt/fsem0_si1828.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/input/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CodecReg/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CFM-Conf/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CFM-UConf/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CodecFlow/fsem0_si1828.png" width="130px"></center></td>
         </tr>
+
         <tr>
             <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-03/reference.wav" type="audio/mpeg">
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/gt/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-03/maskgct.wav" type="audio/mpeg">
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/input/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-03/vevo.wav" type="audio/mpeg">
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/CodecReg/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
             <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f1/demo-03/ours.wav" type="audio/mpeg">
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/CFM-Conf/mbdg0_si1463_8k.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/CFM-UConf/mbdg0_si1463_8k.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/16k/CodecFlow/mbdg0_si1463_8k.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
         </tr>
+
+        <tr>
+            <td><center><img src="ablation/16k/gt/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/input/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CodecReg/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CFM-Conf/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CFM-UConf/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="ablation/16k/CodecFlow/mbdg0_si1463_8k.png" width="130px"></center></td>
+        </tr>
+
+        <tr style="background-color: #EAF2E8;">
+          <td colspan="6" style="text-align: center; padding: 6px 10px; font-weight: bold;">
+            Bandwidth Extension from 8 kHz to 44.1 kHz
+          </td>
+        </tr>
+
+       <tr>
+            <td nowrap><center>Target</center></td>
+            <td><center>Input</center></td>
+            <td><center>CodecReg</center></td>
+            <td><center>CFM-Conf</center></td>
+            <td><center>CFM-UConf</center></td>
+           <td><center>CodecFlow</center></td>
+        </tr>
+
+        <tr>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/gt/p225_298_mic1.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/input/p225_298_mic1.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/CodecReg/p225_298_mic1.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/CFM-Conf/p225_298_mic1.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/CFM-UConf/p225_298_mic1.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/CodecFlow/p225_298_mic1.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+        </tr>
+
+        <tr>
+            <td><center><img src="ablation/44.1k/gt/p225_298_mic1.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/input/p225_298_mic1.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/CodecReg/p225_298_mic1.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/CFM-Conf/p225_298_mic1.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/CFM-UConf/p225_298_mic1.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/CodecFlow/p225_298_mic1.png" width="130px"></center></td>
+        </tr>
+
+        <tr>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/gt/p226_027_mic2.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/input/p226_027_mic2.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/CodecReg/p226_027_mic2.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/CFM-Conf/p226_027_mic2.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/CFM-UConf/p226_027_mic2.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td>
+                <audio controls style="width: 130px;">
+                  <source src="ablation/44.1k/CodecFlow/p226_027_mic2.wav" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio>
+            </td>
+        </tr>
+
+        <tr>
+            <td><center><img src="ablation/44.1k/gt/p226_027_mic2.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/input/p226_027_mic2.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/CodecReg/p226_027_mic2.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/CFM-Conf/p226_027_mic2.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/CFM-UConf/p226_027_mic2.png" width="130px"></center></td>
+            <td><center><img src="ablation/44.1k/CodecFlow/p226_027_mic2.png" width="130px"></center></td>
+        </tr>
+
     </tbody>
-        
 </table>
-
-
-<table style="font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
-    <tbody>
-        <colgroup>
-        <col width="170">
-        <col width="170">
-        <col width="170">
-        <col width="170">
-      </colgroup>
-       <tr style="background-color: #EAF2E8;">
-          <td colspan="5" style="text-align: center; padding: 6px 10px; font-weight: bold;">
-            Female Singer 2: Mian-Mian
-          </td>
-        </tr>
-        <tr>
-            <td><center>Reference</center></td>
-            <td><center>MaskGCT</center></td>
-            <td><center>Vevo 1.5</center></td>
-           <td><center>CoMelSinger</center></td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            一 (C#4) 寸 (D4) 一 (C#4) 寸 (D4) 填 (F#4) 满 (G3) 欲 (E3) 望 (D3) ｜ yi cun yi cun tian man yu wang
-          </td>
-        </tr>
-        <tr>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-01/reference.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-01/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-01/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-01/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            只 (Ab3) 是 (Bb3) 哪 (C4) 怕 (Bb3) 周 (C4) 围 (Bb3) 再 (C4) 多 (F4) 人 (C4) | zhi shi na pa zhou wei zai duo ren
-          </td>
-        </tr>
-        <tr>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-02/reference.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-02/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-02/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-02/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-        </tr>
-
-        <tr style="background-color: #F0EFF8;">
-          <td colspan="5" style="text-align: left; padding: 6px 10px; font-weight: 500;">
-            所 (E4) 有 (F#4) 人 (E4) 都 (D4) 遗 (C#4) 忘 (B3) 了 (E4) 我 (C#4) | suo you ren dou yi wang le wo
-          </td>
-        </tr>
-        <tr>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-03/reference.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-03/maskgct.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-03/vevo.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-            <td>
-                <audio controls style="width: 170px;">
-                  <source src="unseen/f2/demo-03/ours.wav" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-            </td>
-        </tr>
-    </tbody>
-        
-</table>
-
-
+<div style="
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(255,255,255,0), white);
+  "></div>
+  
+  </div>
+  
