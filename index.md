@@ -1,20 +1,31 @@
 <h1 style="text-align: justify;">
-CoMelSinger: Discrete Token-Based Zero-Shot Singing Synthesis With Structured Melody Control and Guidance
+CodecFlow: Efficient Bandwidth Extension via Conditional Flow Matching in Neural Codec Latent Space
 </h1>
 
 <div style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
-Paper Link: <a href="https://arxiv.org/pdf/2509.19883" target="_blank">Arxiv</a>
+Paper Link: <a href="[https://arxiv.org/pdf/2509.19883](https://arxiv.org/pdf/2603.02022)" target="_blank">Arxiv</a>
 </div>
 ## Abstract of the paper
 
 <div style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
-Singing Voice Synthesis (SVS) aims to generate expressive vocal performances from structured musical inputs such as lyrics and pitch sequences. While recent progress in discrete codec-based speech synthesis has enabled zero-shot generation via in-context learning, directly extending these techniques to SVS remains non-trivial due to the requirement for precise melody control. In particular, prompt-based generation often introduces prosody leakage, where pitch information is inadvertently entangled within the timbre prompt, compromising controllability. We present CoMelSinger, a zero-shot SVS framework that enables structured and disentangled melody control within a discrete codec modeling paradigm. Built on the non-autoregressive MaskGCT architecture, CoMelSinger replaces conventional text inputs with lyric and pitch tokens, preserving in-context generalization while enhancing melody conditioning. To suppress prosody leakage, we propose a coarse-to-fine contrastive learning strategy that explicitly regularizes pitch redundancy between the acoustic prompt and melody input. Furthermore, we incorporate a lightweight encoder-only Singing Voice Transcription (SVT) module to align acoustic tokens with pitch and duration, offering fine-grained frame-level supervision. Experimental results demonstrate that CoMelSinger achieves notable improvements in pitch accuracy, timbre consistency, and zero-shot transferability over competitive baselines. 
+Speech Bandwidth Extension improves clarity and intelligibility by restoring/inferring appropriate high-frequency content for low-bandwidth speech. Existing methods often rely on spectrogram or waveform modeling, which can incur higher computational cost and have limited high-frequency fidelity. Neural audio codecs offer compact latent representations that better preserve acoustic detail, yet accurately recovering high-resolution latent information remains challenging due to representation mismatch. We present CodecFlow, a neural codec-based BWE framework that performs efficient speech reconstruction in a compact latent space. CodecFlow employs a voicing-aware conditional flow converter on continuous codec embeddings and a structure-constrained residual vector quantizer to improve latent alignment stability. Optimized end-to-end, CodecFlow achieves strong spectral fidelity and enhanced perceptual quality on 8 kHz to 16 kHz and 44.1 kHz speech BWE tasks.
 </div>
 
-## Model Architecture
+## Method
 <div style="text-align: center;">
-    <img src="CoMelSinger-overall.png" width="1000px">
-    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;"> Overview of CoMelSinger (left). It adopts a two-stage pipeline: a T2S model encodes lyrics into semantic tokens, and an S2A model generates acoustic tokens conditioned on lyrics, pitch, and prompt. SVT provides pitch supervision. All modules except S2A are frozen during training. Overview of the coarse-to-fine contrastive learning strategy (right). (a) Sequence-level contrastive learning encourages timbre consistency across different melodies. (b) Frame-level contrastive learning uses pitch perturbation to enforce local pitch-awareness and disentangle melody from timbre.</figcaption>
+    <img src="figures/figure2_new.pdf" width="1000px">
+    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;"> \textbf{V/UV segmentation and LR–HR embedding cosine similarity over time.} Upper: spectrogram with word boundaries and V/UV labels. Lower: cosine similarity; orange dashed
+regions mark UV-aligned drops, blue dashed line shows the global mean.</figcaption>
+</div>
+
+<div style="text-align: center;">
+    <img src="figures/overall.pdf" width="1000px">
+    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;"> \textbf{V/UV segmentation and LR–HR embedding cosine similarity over time.} Upper: spectrogram with word boundaries and V/UV labels. Lower: cosine similarity; orange dashed regions mark UV-aligned drops, blue dashed line shows the global mean.</figcaption>
+</div>
+
+<div style="text-align: center;">
+    <img src="figures/overall.pdf" width="1000px">
+    <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;"> \textbf{An overview of the proposed CodecFlow framework.} (a) the overall model pipeline, (b) the architecture of the voicing extractor, and (c) the architecture of the flow prediction network from the flow embedding converter (FEC). </figcaption>
 </div>
 
 ## Synthesis Results on Seen Singers
