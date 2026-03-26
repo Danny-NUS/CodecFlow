@@ -71,7 +71,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
         <tr>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="16k/gt/fsem0_si1828_8k.wav" type="audio/mpeg">
+                  <source src="16k/gt/fsem0_si1828.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
@@ -83,7 +83,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="16k/nuwave2/fsem0_si1828_8k.wav" type="audio/mpeg">
+                  <source src="16k/nuwave2/fsem0_si1828_nuwave2.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
@@ -107,26 +107,26 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="16k/CodecFlow/fsem0_si1828_8k.wav" type="audio/mpeg">
+                  <source src="16k/CodecFlow/fsem0_si1828.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
         </tr>
 
         <tr>
-            <td><center><img src="16k/gt/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/gt/fsem0_si1828.png" width="130px"></center></td>
             <td><center><img src="16k/input/fsem0_si1828_8k.png" width="130px"></center></td>
-            <td><center><img src="16k/nuwave2/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/nuwave2/fsem0_si1828_nuwave2.png" width="130px"></center></td>
             <td><center><img src="16k/APBWE/fsem0_si1828_8k.png" width="130px"></center></td>
             <td><center><img src="16k/FrePainter/fsem0_si1828_8k.png" width="130px"></center></td>
             <td><center><img src="16k/flowhigh/fsem0_si1828_8k.png" width="130px"></center></td>
-            <td><center><img src="16k/CodecFlow/fsem0_si1828_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/CodecFlow/fsem0_si1828.png" width="130px"></center></td>
         </tr>
 
         <tr>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="16k/gt/mbdg0_si1463_8k.wav" type="audio/mpeg">
+                  <source src="16k/gt/mbdg0_si1463.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
@@ -138,7 +138,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="16k/nuwave2/mbdg0_si1463_8k.wav" type="audio/mpeg">
+                  <source src="16k/nuwave2/mbdg0_si1463_nuwave2.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
@@ -162,20 +162,20 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
             </td>
             <td>
                 <audio controls style="width: 130px;">
-                  <source src="16k/CodecFlow/mbdg0_si1463_8k.wav" type="audio/mpeg">
+                  <source src="16k/CodecFlow/mbdg0_si1463.wav" type="audio/mpeg">
                   Your browser does not support the audio tag.
                 </audio>
             </td>
         </tr>
 
         <tr>
-            <td><center><img src="16k/gt/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/gt/mbdg0_si1463.png" width="130px"></center></td>
             <td><center><img src="16k/input/mbdg0_si1463_8k.png" width="130px"></center></td>
-            <td><center><img src="16k/nuwave2/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/nuwave2/mbdg0_si1463_nuwave2.png" width="130px"></center></td>
             <td><center><img src="16k/APBWE/mbdg0_si1463_8k.png" width="130px"></center></td>
             <td><center><img src="16k/FrePainter/mbdg0_si1463_8k.png" width="130px"></center></td>
             <td><center><img src="16k/flowhigh/mbdg0_si1463_8k.png" width="130px"></center></td>
-            <td><center><img src="16k/CodecFlow/mbdg0_si1463_8k.png" width="130px"></center></td>
+            <td><center><img src="16k/CodecFlow/mbdg0_si1463.png" width="130px"></center></td>
         </tr>
 
         <tr style="background-color: #F0EFF8;">
