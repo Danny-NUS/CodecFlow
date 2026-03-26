@@ -48,6 +48,7 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
 </figure>
 
 ## Baseline Comparison
+<div style="position: relative; overflow-x: auto;">
 <table style="font-family: 'Times New Roman', 'SimSun', '宋体', serif;">
     <tbody>
 
@@ -304,6 +305,16 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
         </tr>
     </tbody>
 </table>
+<div style="
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(255,255,255,0), white);
+"></div>
+</div>
 
 ## Ablation Study
 <table style="font-family: 'Times New Roman', 'SimSun', '宋体', serif; width: 100%; max-width: 100%;  border-collapse: collapse;">
