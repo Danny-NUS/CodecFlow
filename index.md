@@ -33,29 +33,8 @@ Speech Bandwidth Extension improves clarity and intelligibility by restoring/inf
 </figure>
 
 ## Results
-<div style="display: flex; justify-content: center; gap: 10px; align-items: flex-start;">
-
-  <figure style="width: 50%; text-align: center; margin: 0;">
-      <div style="height: 260px; display: flex; align-items: flex-start; justify-content: center;">
-          <img src="figures/16.png" style="max-width: 100%; max-height: 100%; display: block;">
-      </div>
-      <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif; margin-top: 8px;">
-          <strong>Spectrogram comparisons for the 8 kHz to 16 kHz bandwidth expansion task.</strong>
-          Spectrogram comparison between the 8 kHz input, the 16 kHz ground truth (GT), and model outputs, including NUWave2, AP-BWE, FlowHigh, and the proposed CodecFlow.
-      </figcaption>
-  </figure>
-
-  <figure style="width: 50%; text-align: center; margin: 0;">
-      <div style="height: 260px; display: flex; align-items: flex-start; justify-content: center;">
-          <img src="figures/44.png" style="max-width: 100%; max-height: 100%; display: block;">
-      </div>
-      <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif; margin-top: 8px;">
-          <strong>Spectrogram comparisons for the 8 kHz to 44.1 kHz bandwidth expansion task.</strong>
-          Spectrogram comparison between the 8 kHz input, the 44.1 kHz ground truth (GT), and model outputs, including NUWave2, AP-BWE, FlowHigh, and the proposed CodecFlow.
-      </figcaption>
-  </figure>
-
-</div>
+<figure style="text-align: center;"> <img src="figures/16.png" width="1000px"> <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;"> <strong>Spectrogram comparisons for the 8 kHz to 16 kHz bandwidth expansion task.</strong> Spectrogram comparison between the 8 kHz input, the 16 kHz ground truth (GT), and model outputs, including NUWave2, AP-BWE, FlowHigh, and the proposed CodecFlow. </figcaption> </figure> 
+<figure style="text-align: center;"> <img src="figures/44.png" width="1000px"> <figcaption style="text-align: justify; font-family: 'Times New Roman', 'SimSun', '宋体', serif;"> <strong>Spectrogram comparisons for the 8 kHz to 44.1 kHz bandwidth expansion task.</strong> Spectrogram comparison between the 8 kHz input, the 44.1 kHz ground truth (GT), and model outputs, including NUWave2, AP-BWE, FlowHigh, and the proposed CodecFlow. </figcaption> </figure>
 
 ## Baseline Comparison
 <div style="position: relative; overflow-x: auto;">
