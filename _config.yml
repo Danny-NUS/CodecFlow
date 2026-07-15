@@ -1,4 +1,8 @@
 theme: jekyll-theme-cayman
+title: CodecFlow
+description: Efficient bandwidth extension in neural codec latent space
+github:
+    build_revision: "prototype-7"
 colors:
     gradient_left: "#155799"
     gradient_right: "#159957"

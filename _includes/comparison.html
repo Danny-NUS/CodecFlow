@@ -1,0 +1,28 @@
+{% assign methods = include.methods | split: "|" %}
+{% assign folders = include.folders | split: "|" %}
+{% assign audio_files = include.audio_files | split: "|" %}
+{% assign image_files = include.image_files | split: "|" %}
+{% assign display_title = include.title | split: "·" | first %}
+<article class="listening-set">
+  <div class="set-heading">
+    <div>
+      <span class="sample-label">{{ include.sample }}</span>
+      <h3>{{ display_title | strip }} comparison</h3>
+    </div>
+  </div>
+  <div class="comparison-grid" aria-label="{{ display_title | strip }} comparison between all methods.">
+    {% for method in methods %}
+      <section class="audio-card{% if method == 'CodecFlow' %} featured{% endif %}{% if method == 'Target' or method == 'Input' %} reference{% endif %}">
+        <div class="card-topline">
+          <h4>{{ method }}</h4>
+          {% if method == 'CodecFlow' %}<span class="proposed">Proposed</span>{% endif %}
+        </div>
+        <img src="{{ include.base }}/{{ folders[forloop.index0] }}/{{ image_files[forloop.index0] }}" alt="Spectrogram for {{ method }}" loading="lazy">
+        <audio controls preload="none">
+          <source src="{{ include.base }}/{{ folders[forloop.index0] }}/{{ audio_files[forloop.index0] }}" type="audio/wav">
+          Your browser does not support audio playback.
+        </audio>
+      </section>
+    {% endfor %}
+  </div>
+</article>
