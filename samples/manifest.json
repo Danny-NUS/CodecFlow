@@ -1,0 +1,798 @@
+{
+ "note": "September 27, 2026 manuscript: Table I (baselines) and Table II (ablation) rows; metrics are the per-file values behind those tables.",
+ "metrics": [
+  "LSD",
+  "LSD_LF",
+  "LSD_HF",
+  "VISQOL",
+  "NISQA_OVL"
+ ],
+ "sets": {
+  "timit": {
+   "title": "TIMIT, 8->16 kHz (cross-corpus, 49 utt.)",
+   "sr": 16000,
+   "utterances": {
+    "fmml0_sx50": {
+     "gender": "F",
+     "duration_s": 3.2
+    },
+    "mlll0_si1363": {
+     "gender": "M",
+     "duration_s": 4.99
+    }
+   },
+   "sections": {
+    "baselines": {
+     "reference": {
+      "label": "Reference (16 kHz)",
+      "files": {
+       "fmml0_sx50": {
+        "path": "baselines/timit/reference/fmml0_sx50.wav"
+       },
+       "mlll0_si1363": {
+        "path": "baselines/timit/reference/mlll0_si1363.wav"
+       }
+      }
+     },
+     "input_8k": {
+      "label": "8 kHz input",
+      "files": {
+       "fmml0_sx50": {
+        "path": "baselines/timit/input_8k/fmml0_sx50.wav",
+        "LSD": 3.5,
+        "LSD_LF": 0.909,
+        "LSD_HF": 4.861,
+        "VISQOL": 2.75,
+        "NISQA_OVL": 3.75
+       },
+       "mlll0_si1363": {
+        "path": "baselines/timit/input_8k/mlll0_si1363.wav",
+        "LSD": 3.957,
+        "LSD_LF": 0.977,
+        "LSD_HF": 5.506,
+        "VISQOL": 2.6,
+        "NISQA_OVL": 3.276
+       }
+      }
+     },
+     "codec_rt": {
+      "label": "Codec round trip",
+      "files": {
+       "fmml0_sx50": {
+        "path": "baselines/timit/codec_rt/fmml0_sx50.wav",
+        "LSD": 0.817,
+        "LSD_LF": 0.628,
+        "LSD_HF": 0.963,
+        "VISQOL": 4.256,
+        "NISQA_OVL": 4.29
+       },
+       "mlll0_si1363": {
+        "path": "baselines/timit/codec_rt/mlll0_si1363.wav",
+        "LSD": 0.806,
+        "LSD_LF": 0.647,
+        "LSD_HF": 0.933,
+        "VISQOL": 3.877,
+        "NISQA_OVL": 4.23
+       }
+      }
+     },
+     "nuwave2": {
+      "label": "NU-Wave2",
+      "files": {
+       "fmml0_sx50": {
+        "path": "baselines/timit/nuwave2/fmml0_sx50.wav",
+        "LSD": 1.434,
+        "LSD_LF": 0.51,
+        "LSD_HF": 1.948,
+        "VISQOL": 2.307,
+        "NISQA_OVL": 3.455
+       },
+       "mlll0_si1363": {
+        "path": "baselines/timit/nuwave2/mlll0_si1363.wav",
+        "LSD": 1.77,
+        "LSD_LF": 0.57,
+        "LSD_HF": 2.422,
+        "VISQOL": 2.329,
+        "NISQA_OVL": 3.005
+       }
+      }
+     },
+     "flowhigh": {
+      "label": "FlowHigh",
+      "files": {
+       "fmml0_sx50": {
+        "path": "baselines/timit/flowhigh/fmml0_sx50.wav",
+        "LSD": 1.243,
+        "LSD_LF": 0.349,
+        "LSD_HF": 1.721,
+        "VISQOL": 2.717,
+        "NISQA_OVL": 4.158
+       },
+       "mlll0_si1363": {
+        "path": "baselines/timit/flowhigh/mlll0_si1363.wav",
+        "LSD": 1.374,
+        "LSD_LF": 0.408,
+        "LSD_HF": 1.895,
+        "VISQOL": 2.023,
+        "NISQA_OVL": 3.822
+       }
+      }
+     },
+     "frepainter": {
+      "label": "Fre-Painter",
+      "files": {
+       "fmml0_sx50": {
+        "path": "baselines/timit/frepainter/fmml0_sx50.wav",
+        "LSD": 1.324,
+        "LSD_LF": 0.346,
+        "LSD_HF": 1.838,
+        "VISQOL": 2.59,
+        "NISQA_OVL": 4.159
+       },
+       "mlll0_si1363": {
+        "path": "baselines/timit/frepainter/mlll0_si1363.wav",
+        "LSD": 1.353,
+        "LSD_LF": 0.357,
+        "LSD_HF": 1.876,
+        "VISQOL": 2.145,
+        "NISQA_OVL": 3.617
+       }
+      }
+     },
+     "apbwe": {
+      "label": "AP-BWE",
+      "files": {
+       "fmml0_sx50": {
+        "path": "baselines/timit/apbwe/fmml0_sx50.wav",
+        "LSD": 1.285,
+        "LSD_LF": 0.462,
+        "LSD_HF": 1.753,
+        "VISQOL": 2.275,
+        "NISQA_OVL": 4.021
+       },
+       "mlll0_si1363": {
+        "path": "baselines/timit/apbwe/mlll0_si1363.wav",
+        "LSD": 1.317,
+        "LSD_LF": 0.463,
+        "LSD_HF": 1.801,
+        "VISQOL": 2.071,
+        "NISQA_OVL": 3.401
+       }
+      }
+     },
+     "ours": {
+      "label": "Ours",
+      "files": {
+       "fmml0_sx50": {
+        "path": "baselines/timit/ours/fmml0_sx50.wav",
+        "LSD": 0.994,
+        "LSD_LF": 0.556,
+        "LSD_HF": 1.284,
+        "VISQOL": 3.235,
+        "NISQA_OVL": 4.408
+       },
+       "mlll0_si1363": {
+        "path": "baselines/timit/ours/mlll0_si1363.wav",
+        "LSD": 0.977,
+        "LSD_LF": 0.58,
+        "LSD_HF": 1.245,
+        "VISQOL": 3.016,
+        "NISQA_OVL": 4.039
+       }
+      }
+     }
+    },
+    "ablation": {
+     "rfc_rvq_frozenD": {
+      "label": "RFC + RVQ + frozen D",
+      "files": {
+       "fmml0_sx50": {
+        "path": "ablation/timit/rfc_rvq_frozenD/fmml0_sx50.wav",
+        "LSD": 1.127,
+        "LSD_LF": 0.681,
+        "LSD_HF": 1.43,
+        "VISQOL": 2.123,
+        "NISQA_OVL": 4.002
+       },
+       "mlll0_si1363": {
+        "path": "ablation/timit/rfc_rvq_frozenD/mlll0_si1363.wav",
+        "LSD": 1.335,
+        "LSD_LF": 0.701,
+        "LSD_HF": 1.734,
+        "VISQOL": 1.816,
+        "NISQA_OVL": 3.47
+       }
+      }
+     },
+     "rfc_rvq_adaptedD": {
+      "label": "RFC + RVQ + adapted D",
+      "files": {
+       "fmml0_sx50": {
+        "path": "ablation/timit/rfc_rvq_adaptedD/fmml0_sx50.wav",
+        "LSD": 1.004,
+        "LSD_LF": 0.64,
+        "LSD_HF": 1.261,
+        "VISQOL": 2.995,
+        "NISQA_OVL": 4.442
+       },
+       "mlll0_si1363": {
+        "path": "ablation/timit/rfc_rvq_adaptedD/mlll0_si1363.wav",
+        "LSD": 1.009,
+        "LSD_LF": 0.672,
+        "LSD_HF": 1.25,
+        "VISQOL": 2.65,
+        "NISQA_OVL": 3.966
+       }
+      }
+     },
+     "flc_adaptedD": {
+      "label": "FLC + adapted D",
+      "files": {
+       "fmml0_sx50": {
+        "path": "ablation/timit/flc_adaptedD/fmml0_sx50.wav",
+        "LSD": 1.011,
+        "LSD_LF": 0.589,
+        "LSD_HF": 1.296,
+        "VISQOL": 3.361,
+        "NISQA_OVL": 4.401
+       },
+       "mlll0_si1363": {
+        "path": "ablation/timit/flc_adaptedD/mlll0_si1363.wav",
+        "LSD": 0.981,
+        "LSD_LF": 0.618,
+        "LSD_HF": 1.232,
+        "VISQOL": 2.852,
+        "NISQA_OVL": 4.109
+       }
+      }
+     },
+     "rfc_adaptedD_ours": {
+      "label": "RFC + adapted D (ours)",
+      "files": {
+       "fmml0_sx50": {
+        "path": "ablation/timit/rfc_adaptedD_ours/fmml0_sx50.wav",
+        "LSD": 0.994,
+        "LSD_LF": 0.556,
+        "LSD_HF": 1.284,
+        "VISQOL": 3.235,
+        "NISQA_OVL": 4.408
+       },
+       "mlll0_si1363": {
+        "path": "ablation/timit/rfc_adaptedD_ours/mlll0_si1363.wav",
+        "LSD": 0.977,
+        "LSD_LF": 0.58,
+        "LSD_HF": 1.245,
+        "VISQOL": 3.016,
+        "NISQA_OVL": 4.039
+       }
+      }
+     }
+    }
+   }
+  },
+  "libritts": {
+   "title": "LibriTTS test-clean, 8->16 kHz (within-corpus, 50 utt.)",
+   "sr": 16000,
+   "utterances": {
+    "4970_29095_000018_000002": {
+     "gender": "F",
+     "duration_s": 5.54
+    },
+    "7729_102255_000018_000007": {
+     "gender": "M",
+     "duration_s": 4.9
+    }
+   },
+   "sections": {
+    "baselines": {
+     "reference": {
+      "label": "Reference (16 kHz)",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "baselines/libritts/reference/4970_29095_000018_000002.wav"
+       },
+       "7729_102255_000018_000007": {
+        "path": "baselines/libritts/reference/7729_102255_000018_000007.wav"
+       }
+      }
+     },
+     "input_8k": {
+      "label": "8 kHz input",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "baselines/libritts/input_8k/4970_29095_000018_000002.wav",
+        "LSD": 3.74,
+        "LSD_LF": 0.897,
+        "LSD_HF": 5.209,
+        "VISQOL": 3.335,
+        "NISQA_OVL": 3.31
+       },
+       "7729_102255_000018_000007": {
+        "path": "baselines/libritts/input_8k/7729_102255_000018_000007.wav",
+        "LSD": 3.216,
+        "LSD_LF": 0.885,
+        "LSD_HF": 4.457,
+        "VISQOL": 3.534,
+        "NISQA_OVL": 3.821
+       }
+      }
+     },
+     "codec_rt": {
+      "label": "Codec round trip",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "baselines/libritts/codec_rt/4970_29095_000018_000002.wav",
+        "LSD": 0.84,
+        "LSD_LF": 0.669,
+        "LSD_HF": 0.977,
+        "VISQOL": 4.347,
+        "NISQA_OVL": 3.93
+       },
+       "7729_102255_000018_000007": {
+        "path": "baselines/libritts/codec_rt/7729_102255_000018_000007.wav",
+        "LSD": 0.831,
+        "LSD_LF": 0.702,
+        "LSD_HF": 0.94,
+        "VISQOL": 4.14,
+        "NISQA_OVL": 4.523
+       }
+      }
+     },
+     "nuwave2": {
+      "label": "NU-Wave2",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "baselines/libritts/nuwave2/4970_29095_000018_000002.wav",
+        "LSD": 1.518,
+        "LSD_LF": 0.733,
+        "LSD_HF": 1.997,
+        "VISQOL": 3.152,
+        "NISQA_OVL": 2.825
+       },
+       "7729_102255_000018_000007": {
+        "path": "baselines/libritts/nuwave2/7729_102255_000018_000007.wav",
+        "LSD": 1.554,
+        "LSD_LF": 0.819,
+        "LSD_HF": 2.019,
+        "VISQOL": 2.938,
+        "NISQA_OVL": 2.983
+       }
+      }
+     },
+     "flowhigh": {
+      "label": "FlowHigh",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "baselines/libritts/flowhigh/4970_29095_000018_000002.wav",
+        "LSD": 1.068,
+        "LSD_LF": 0.525,
+        "LSD_HF": 1.41,
+        "VISQOL": 2.792,
+        "NISQA_OVL": 3.506
+       },
+       "7729_102255_000018_000007": {
+        "path": "baselines/libritts/flowhigh/7729_102255_000018_000007.wav",
+        "LSD": 0.9,
+        "LSD_LF": 0.521,
+        "LSD_HF": 1.157,
+        "VISQOL": 2.905,
+        "NISQA_OVL": 4.305
+       }
+      }
+     },
+     "frepainter": {
+      "label": "Fre-Painter",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "baselines/libritts/frepainter/4970_29095_000018_000002.wav",
+        "LSD": 0.957,
+        "LSD_LF": 0.5,
+        "LSD_HF": 1.252,
+        "VISQOL": 3.042,
+        "NISQA_OVL": 3.963
+       },
+       "7729_102255_000018_000007": {
+        "path": "baselines/libritts/frepainter/7729_102255_000018_000007.wav",
+        "LSD": 0.987,
+        "LSD_LF": 0.542,
+        "LSD_HF": 1.278,
+        "VISQOL": 3.342,
+        "NISQA_OVL": 4.271
+       }
+      }
+     },
+     "apbwe": {
+      "label": "AP-BWE",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "baselines/libritts/apbwe/4970_29095_000018_000002.wav",
+        "LSD": 1.344,
+        "LSD_LF": 0.463,
+        "LSD_HF": 1.837,
+        "VISQOL": 2.62,
+        "NISQA_OVL": 3.274
+       },
+       "7729_102255_000018_000007": {
+        "path": "baselines/libritts/apbwe/7729_102255_000018_000007.wav",
+        "LSD": 1.089,
+        "LSD_LF": 0.474,
+        "LSD_HF": 1.461,
+        "VISQOL": 2.998,
+        "NISQA_OVL": 4.203
+       }
+      }
+     },
+     "ours": {
+      "label": "Ours",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "baselines/libritts/ours/4970_29095_000018_000002.wav",
+        "LSD": 0.906,
+        "LSD_LF": 0.598,
+        "LSD_HF": 1.129,
+        "VISQOL": 3.148,
+        "NISQA_OVL": 4.267
+       },
+       "7729_102255_000018_000007": {
+        "path": "baselines/libritts/ours/7729_102255_000018_000007.wav",
+        "LSD": 0.918,
+        "LSD_LF": 0.639,
+        "LSD_HF": 1.124,
+        "VISQOL": 3.187,
+        "NISQA_OVL": 4.456
+       }
+      }
+     }
+    },
+    "ablation": {
+     "rfc_rvq_frozenD": {
+      "label": "RFC + RVQ + frozen D",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "ablation/libritts/rfc_rvq_frozenD/4970_29095_000018_000002.wav",
+        "LSD": 1.192,
+        "LSD_LF": 0.719,
+        "LSD_HF": 1.509,
+        "VISQOL": 2.624,
+        "NISQA_OVL": 3.555
+       },
+       "7729_102255_000018_000007": {
+        "path": "ablation/libritts/rfc_rvq_frozenD/7729_102255_000018_000007.wav",
+        "LSD": 1.096,
+        "LSD_LF": 0.757,
+        "LSD_HF": 1.343,
+        "VISQOL": 2.812,
+        "NISQA_OVL": 4.315
+       }
+      }
+     },
+     "rfc_rvq_adaptedD": {
+      "label": "RFC + RVQ + adapted D",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "ablation/libritts/rfc_rvq_adaptedD/4970_29095_000018_000002.wav",
+        "LSD": 0.928,
+        "LSD_LF": 0.671,
+        "LSD_HF": 1.122,
+        "VISQOL": 2.774,
+        "NISQA_OVL": 4.208
+       },
+       "7729_102255_000018_000007": {
+        "path": "ablation/libritts/rfc_rvq_adaptedD/7729_102255_000018_000007.wav",
+        "LSD": 0.964,
+        "LSD_LF": 0.721,
+        "LSD_HF": 1.149,
+        "VISQOL": 3.087,
+        "NISQA_OVL": 4.532
+       }
+      }
+     },
+     "flc_adaptedD": {
+      "label": "FLC + adapted D",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "ablation/libritts/flc_adaptedD/4970_29095_000018_000002.wav",
+        "LSD": 0.911,
+        "LSD_LF": 0.63,
+        "LSD_HF": 1.119,
+        "VISQOL": 2.883,
+        "NISQA_OVL": 3.961
+       },
+       "7729_102255_000018_000007": {
+        "path": "ablation/libritts/flc_adaptedD/7729_102255_000018_000007.wav",
+        "LSD": 0.921,
+        "LSD_LF": 0.673,
+        "LSD_HF": 1.11,
+        "VISQOL": 3.104,
+        "NISQA_OVL": 4.495
+       }
+      }
+     },
+     "rfc_adaptedD_ours": {
+      "label": "RFC + adapted D (ours)",
+      "files": {
+       "4970_29095_000018_000002": {
+        "path": "ablation/libritts/rfc_adaptedD_ours/4970_29095_000018_000002.wav",
+        "LSD": 0.906,
+        "LSD_LF": 0.598,
+        "LSD_HF": 1.129,
+        "VISQOL": 3.148,
+        "NISQA_OVL": 4.267
+       },
+       "7729_102255_000018_000007": {
+        "path": "ablation/libritts/rfc_adaptedD_ours/7729_102255_000018_000007.wav",
+        "LSD": 0.918,
+        "LSD_LF": 0.639,
+        "LSD_HF": 1.124,
+        "VISQOL": 3.187,
+        "NISQA_OVL": 4.456
+       }
+      }
+     }
+    }
+   }
+  },
+  "vctk": {
+   "title": "VCTK, 8->44.1 kHz (held-out speakers, 50 utt.)",
+   "sr": 44100,
+   "utterances": {
+    "p225_287_mic2": {
+     "gender": "F",
+     "duration_s": 3.7
+    },
+    "p226_341_mic2": {
+     "gender": "M",
+     "duration_s": 3.93
+    }
+   },
+   "sections": {
+    "baselines": {
+     "reference": {
+      "label": "Reference (44.1 kHz)",
+      "files": {
+       "p225_287_mic2": {
+        "path": "baselines/vctk/reference/p225_287_mic2.wav"
+       },
+       "p226_341_mic2": {
+        "path": "baselines/vctk/reference/p226_341_mic2.wav"
+       }
+      }
+     },
+     "input_8k": {
+      "label": "8 kHz input",
+      "files": {
+       "p225_287_mic2": {
+        "path": "baselines/vctk/input_8k/p225_287_mic2.wav",
+        "LSD": 3.017,
+        "LSD_LF": 0.675,
+        "LSD_HF": 3.319,
+        "VISQOL": 2.514,
+        "NISQA_OVL": 3.635
+       },
+       "p226_341_mic2": {
+        "path": "baselines/vctk/input_8k/p226_341_mic2.wav",
+        "LSD": 3.133,
+        "LSD_LF": 0.672,
+        "LSD_HF": 3.447,
+        "VISQOL": 2.124,
+        "NISQA_OVL": 3.77
+       }
+      }
+     },
+     "codec_rt": {
+      "label": "Codec round trip",
+      "files": {
+       "p225_287_mic2": {
+        "path": "baselines/vctk/codec_rt/p225_287_mic2.wav",
+        "LSD": 0.857,
+        "LSD_LF": 0.678,
+        "LSD_HF": 0.891,
+        "VISQOL": 4.012,
+        "NISQA_OVL": 4.43
+       },
+       "p226_341_mic2": {
+        "path": "baselines/vctk/codec_rt/p226_341_mic2.wav",
+        "LSD": 0.849,
+        "LSD_LF": 0.644,
+        "LSD_HF": 0.887,
+        "VISQOL": 3.882,
+        "NISQA_OVL": 4.32
+       }
+      }
+     },
+     "nuwave2": {
+      "label": "NU-Wave2",
+      "files": {
+       "p225_287_mic2": {
+        "path": "baselines/vctk/nuwave2/p225_287_mic2.wav",
+        "LSD": 1.493,
+        "LSD_LF": 0.953,
+        "LSD_HF": 1.581,
+        "VISQOL": 2.344,
+        "NISQA_OVL": 3.334
+       },
+       "p226_341_mic2": {
+        "path": "baselines/vctk/nuwave2/p226_341_mic2.wav",
+        "LSD": 1.37,
+        "LSD_LF": 0.714,
+        "LSD_HF": 1.471,
+        "VISQOL": 2.063,
+        "NISQA_OVL": 3.476
+       }
+      }
+     },
+     "flowhigh": {
+      "label": "FlowHigh",
+      "files": {
+       "p225_287_mic2": {
+        "path": "baselines/vctk/flowhigh/p225_287_mic2.wav",
+        "LSD": 1.575,
+        "LSD_LF": 0.895,
+        "LSD_HF": 1.686,
+        "VISQOL": 3.156,
+        "NISQA_OVL": 3.592
+       },
+       "p226_341_mic2": {
+        "path": "baselines/vctk/flowhigh/p226_341_mic2.wav",
+        "LSD": 1.396,
+        "LSD_LF": 0.671,
+        "LSD_HF": 1.508,
+        "VISQOL": 3.247,
+        "NISQA_OVL": 4.132
+       }
+      }
+     },
+     "frepainter": {
+      "label": "Fre-Painter",
+      "files": {
+       "p225_287_mic2": {
+        "path": "baselines/vctk/frepainter/p225_287_mic2.wav",
+        "LSD": 1.6,
+        "LSD_LF": 0.866,
+        "LSD_HF": 1.717,
+        "VISQOL": 2.987,
+        "NISQA_OVL": 3.755
+       },
+       "p226_341_mic2": {
+        "path": "baselines/vctk/frepainter/p226_341_mic2.wav",
+        "LSD": 1.324,
+        "LSD_LF": 0.657,
+        "LSD_HF": 1.428,
+        "VISQOL": 3.063,
+        "NISQA_OVL": 4.356
+       }
+      }
+     },
+     "apbwe": {
+      "label": "AP-BWE",
+      "files": {
+       "p225_287_mic2": {
+        "path": "baselines/vctk/apbwe/p225_287_mic2.wav",
+        "LSD": 1.034,
+        "LSD_LF": 0.236,
+        "LSD_HF": 1.136,
+        "VISQOL": 3.008,
+        "NISQA_OVL": 4.426
+       },
+       "p226_341_mic2": {
+        "path": "baselines/vctk/apbwe/p226_341_mic2.wav",
+        "LSD": 1.024,
+        "LSD_LF": 0.214,
+        "LSD_HF": 1.127,
+        "VISQOL": 2.95,
+        "NISQA_OVL": 4.71
+       }
+      }
+     },
+     "ours": {
+      "label": "Ours",
+      "files": {
+       "p225_287_mic2": {
+        "path": "baselines/vctk/ours/p225_287_mic2.wav",
+        "LSD": 0.925,
+        "LSD_LF": 0.586,
+        "LSD_HF": 0.983,
+        "VISQOL": 3.233,
+        "NISQA_OVL": 4.358
+       },
+       "p226_341_mic2": {
+        "path": "baselines/vctk/ours/p226_341_mic2.wav",
+        "LSD": 0.918,
+        "LSD_LF": 0.555,
+        "LSD_HF": 0.978,
+        "VISQOL": 3.217,
+        "NISQA_OVL": 4.421
+       }
+      }
+     }
+    },
+    "ablation": {
+     "rfc_rvq_frozenD": {
+      "label": "RFC + RVQ + frozen D",
+      "files": {
+       "p225_287_mic2": {
+        "path": "ablation/vctk/rfc_rvq_frozenD/p225_287_mic2.wav",
+        "LSD": 1.08,
+        "LSD_LF": 0.736,
+        "LSD_HF": 1.138,
+        "VISQOL": 2.95,
+        "NISQA_OVL": 3.854
+       },
+       "p226_341_mic2": {
+        "path": "ablation/vctk/rfc_rvq_frozenD/p226_341_mic2.wav",
+        "LSD": 0.99,
+        "LSD_LF": 0.681,
+        "LSD_HF": 1.043,
+        "VISQOL": 2.958,
+        "NISQA_OVL": 4.065
+       }
+      }
+     },
+     "rfc_rvq_adaptedD": {
+      "label": "RFC + RVQ + adapted D",
+      "files": {
+       "p225_287_mic2": {
+        "path": "ablation/vctk/rfc_rvq_adaptedD/p225_287_mic2.wav",
+        "LSD": 0.956,
+        "LSD_LF": 0.683,
+        "LSD_HF": 1.005,
+        "VISQOL": 3.159,
+        "NISQA_OVL": 4.412
+       },
+       "p226_341_mic2": {
+        "path": "ablation/vctk/rfc_rvq_adaptedD/p226_341_mic2.wav",
+        "LSD": 0.938,
+        "LSD_LF": 0.656,
+        "LSD_HF": 0.988,
+        "VISQOL": 3.229,
+        "NISQA_OVL": 4.242
+       }
+      }
+     },
+     "flc_adaptedD": {
+      "label": "FLC + adapted D",
+      "files": {
+       "p225_287_mic2": {
+        "path": "ablation/vctk/flc_adaptedD/p225_287_mic2.wav",
+        "LSD": 0.936,
+        "LSD_LF": 0.61,
+        "LSD_HF": 0.992,
+        "VISQOL": 3.236,
+        "NISQA_OVL": 4.337
+       },
+       "p226_341_mic2": {
+        "path": "ablation/vctk/flc_adaptedD/p226_341_mic2.wav",
+        "LSD": 0.92,
+        "LSD_LF": 0.59,
+        "LSD_HF": 0.977,
+        "VISQOL": 3.199,
+        "NISQA_OVL": 4.423
+       }
+      }
+     },
+     "rfc_adaptedD_ours": {
+      "label": "RFC + adapted D (ours)",
+      "files": {
+       "p225_287_mic2": {
+        "path": "ablation/vctk/rfc_adaptedD_ours/p225_287_mic2.wav",
+        "LSD": 0.925,
+        "LSD_LF": 0.586,
+        "LSD_HF": 0.983,
+        "VISQOL": 3.233,
+        "NISQA_OVL": 4.358
+       },
+       "p226_341_mic2": {
+        "path": "ablation/vctk/rfc_adaptedD_ours/p226_341_mic2.wav",
+        "LSD": 0.918,
+        "LSD_LF": 0.555,
+        "LSD_HF": 0.978,
+        "VISQOL": 3.217,
+        "NISQA_OVL": 4.421
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

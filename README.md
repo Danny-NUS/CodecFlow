@@ -1,137 +1,102 @@
 # CodecFlow
 
-**Efficient Bandwidth Extension via Conditional Flow Matching in Neural Codec Latent Space**
+**CodecFlow: Speech Bandwidth Extension via Residual Flow Matching in Codec Latent Space**
 
-CodecFlow is a neural codec-based speech bandwidth extension framework. It reconstructs high-frequency speech content in a compact codec latent space using a voicing-aware conditional flow converter and a structure-constrained residual vector quantizer.
-
-This repository contains the official interactive project page, including method illustrations, spectrogram visualizations, baseline comparisons, ablation studies, and playable audio samples for both 8 kHz → 16 kHz and 8 kHz → 44.1 kHz bandwidth extension.
-
-## Project Page
-
-The interactive demo is available at:
-
-**https://danny-nus.github.io/CodecFlow/**
+This repository contains the research website and listening samples for CodecFlow. It is a demonstration website, not a training or inference implementation.
 
 ## Authors
 
-- Bowen Zhang
-- Junchuan Zhao
-- Ian McLoughlin
-- Ye Wang
-- A S Madhukumar
+Bowen Zhang, Junchuan Zhao, Ian McLoughlin, Ye Wang, and A. S. Madhukumar.
 
-## Overview
+Affiliations: Singapore Institute of Technology, Nanyang Technological University, and National University of Singapore. Author–affiliation associations are shown on the project page.
 
-Speech bandwidth extension improves speech clarity and intelligibility by restoring or inferring high-frequency content from low-bandwidth recordings. Conventional waveform- and spectrogram-domain systems can be computationally expensive and may struggle to preserve fine high-frequency details.
+## Method
 
-CodecFlow instead performs bandwidth extension in neural codec latent space. The framework contains two main components:
+CodecFlow is a two-stage speech bandwidth extension system. Stage 1 learns the residual between narrowband and full-band continuous latents from a frozen neural codec encoder using conditional flow matching. The converter is conditioned on the narrowband latent and a frame-level voicing descriptor. Stage 2 adapts the codec decoder to reconstruct waveforms from the continuous predictions with the residual vector quantiser bypassed.
 
-1. **Voicing-aware conditional flow converter** — models the mapping between low-resolution and high-resolution continuous codec embeddings while using voiced/unvoiced information as an additional condition.
-2. **Structure-constrained residual vector quantizer** — improves latent alignment and stabilizes the reconstruction of high-resolution codec representations.
+The page follows the September 27, 2026 manuscript and preserves its abstract and method-figure caption.
 
-The model is optimized end-to-end and evaluated on two bandwidth extension settings:
+## Website contents
 
-- **8 kHz → 16 kHz** speech bandwidth extension
-- **8 kHz → 44.1 kHz** speech bandwidth extension
+- Full paper title, authors, affiliations, and abstract.
+- Method diagram rendered from `figure_overview.pdf`, with the original PDF available separately.
+- Complete spectrogram comparisons: LibriTTS test-clean (`M1.jpg`), TIMIT (`M2.jpg`), and VCTK (`M3.jpg`). Figures can be enlarged without cropping.
+- Baseline comparisons: reference, 8 kHz input, codec round trip, NU-Wave2, FlowHigh, Fre-Painter, AP-BWE, and CodecFlow.
+- Decoding-path ablations: RFC + RVQ + frozen D; RFC + RVQ + adapted D; FLC + adapted D; RFC + adapted D (CodecFlow).
 
-## Demo Contents
+There are 72 WAV files across three test sets. Each test set supplies one female and one male utterance shared across the baseline and ablation sections. TIMIT and LibriTTS use 16 kHz playback; VCTK uses 44.1 kHz playback. The 8 kHz input tracks are resampled to the playback rate. See [sample documentation](samples/README.md) for selection details and per-file metrics; these values are not aggregate paper results.
 
-The project page includes:
+All systems are displayed directly without horizontal scrolling. CodecFlow appears last in violet. Playing a sample pauses any other active sample.
 
-- An overview of the CodecFlow architecture
-- Voiced/unvoiced segmentation and latent-similarity analysis
-- Spectrogram comparisons for both target bandwidths
-- Audio comparisons against NU-Wave2, AP-BWE, Fre-Painter, and FlowHigh
-- Ablation comparisons for CodecReg, CFM-Conf, and CFM-UConf variants
-- Responsive layouts for desktop, tablet, and mobile devices
+Each audio player shows its mel spectrogram by default. Click **Hide mel spectrogram** to collapse an individual preview. The button above each dataset expands or collapses all of its mel previews. Click a preview to enlarge the full, uncropped image.
 
-CodecFlow samples are visually highlighted in the comparison grids. Target and input references use a neutral dashed style to distinguish them from generated samples.
+### Audio mel previews
 
-## Repository Structure
+The previews in `samples/mel/` are generated directly from the matching WAV files, not from the earlier demo images. They use 128 HTK mel bands, a 32 ms periodic Hann window, an 8 ms hop, and an FFT length rounded up to the next power of two. Triangular filters are normalised by their discrete weight sum. Colour limits are −80 to 0 dB relative to the peak mel power of the same utterance's reference recording, shared across all baseline and ablation systems. The frequency range extends to the playback rate's Nyquist frequency; a dashed line marks 4 kHz. These are website listening aids, not replacements for the supplied manuscript result figures or its metric calculation pipeline.
+
+To regenerate all 72 previews, install `numpy` and `matplotlib` in a Python environment and run:
+
+```bash
+python scripts/generate_mels.py
+```
+
+## Repository structure
 
 ```text
 CodecFlow/
-├── index.md                 # Main Jekyll project page
-├── _config.yml              # Jekyll and theme configuration
-├── _includes/
-│   └── comparison.html      # Reusable audio-comparison component
+├── index.html                 # Research page and manuscript text
+├── .nojekyll                  # Direct static hosting on GitHub Pages
 ├── assets/
-│   └── css/
-│       └── style.scss       # Page styling and responsive behavior
-├── figures/                 # Method and result figures
-├── 16k/                     # 8 kHz → 16 kHz baseline samples
-│   ├── gt/
-│   ├── input/
-│   ├── CodecFlow/
-│   └── ...
-├── 44.1k/                   # 8 kHz → 44.1 kHz baseline samples
-│   ├── gt/
-│   ├── input/
-│   ├── CodecFlow/
-│   └── ...
-└── ablation/                # Ablation-study audio and spectrograms
-    ├── 16k/
-    └── 44.1k/
+│   ├── css/site.css           # Responsive academic layout
+│   ├── js/site.js             # Audio tables and figure viewer
+│   └── figures/overview.png   # Web rendering of the method PDF
+├── figure_overview.pdf        # Original method diagram
+├── M1.jpg                     # LibriTTS spectrogram comparison
+├── M2.jpg                     # TIMIT spectrogram comparison
+├── M3.jpg                     # VCTK spectrogram comparison
+├── scripts/generate_mels.py   # Reproducible per-audio mel generation
+└── samples/
+    ├── manifest.json          # System labels, paths, per-file metrics
+    ├── README.md              # Sample provenance and metadata
+    ├── mel/                   # Generated, full-length per-audio mel previews
+    ├── baselines/             # 48 WAV files
+    └── ablation/              # 24 WAV files
 ```
 
-Each method directory contains matching `.wav` audio files and `.png` mel-spectrogram images used by the interactive comparison cards.
+Current audio and per-audio mel previews come only from `samples/`. The repository contains the current static website and its source assets; the superseded demo collections and Jekyll configuration have been removed.
 
-## Running the Demo Locally
+## Local preview
 
-The site is built with Jekyll and the Cayman theme.
-
-### Prerequisites
-
-- Ruby
-- RubyGems
-- Jekyll
-- `jekyll-theme-cayman`
-
-Install the required gems:
+The site is plain HTML, CSS, and JavaScript, with no package installation or build step. With Python 3 installed, run from the repository root:
 
 ```bash
-gem install jekyll jekyll-theme-cayman kramdown-parser-gfm
+python3 -m http.server 4174 --bind 127.0.0.1
 ```
 
-Start the local development server from the repository root:
+Open [http://127.0.0.1:4174/](http://127.0.0.1:4174/). Use HTTP rather than opening `index.html` directly: browsers restrict fetching the sample manifest from `file://` pages.
+
+## Editing
+
+- Edit manuscript text, authors, captions, and figure references in `index.html`.
+- Edit layout and colours in `assets/css/site.css`.
+- Update sample paths and metadata in `samples/manifest.json`; system ordering and playback behaviour are in `assets/js/site.js`.
+- Keep utterance IDs consistent across systems within a test set. Manifest paths are relative to `samples/`.
+- After replacing the method PDF, regenerate its full-page PNG. With Poppler installed:
 
 ```bash
-jekyll serve
+pdftoppm -f 1 -singlefile -scale-to 2400 -png figure_overview.pdf assets/figures/overview
 ```
 
-Then open `http://127.0.0.1:4000/` in a browser.
-
-To create a production build:
-
-```bash
-jekyll build
-```
-
-The generated static site will be written to `_site/`.
+Before publishing, check desktop and mobile layouts, full figure visibility, and playback in each dataset. No external fonts, analytics, or JavaScript libraries are required.
 
 ## Deployment
 
-The repository is compatible with GitHub Pages.
+Use GitHub Pages or any static web server. For branch-based GitHub Pages deployment, select the publishing branch and repository root under **Settings → Pages**. Keep `.nojekyll` at the root to bypass Jekyll. All asset URLs are relative and support the `/CodecFlow/` project path.
 
-1. Push the repository to GitHub.
-2. Open **Settings → Pages** in the repository.
-3. Select **Deploy from a branch**.
-4. Choose the publishing branch and repository root.
-5. Save the configuration and wait for the Pages deployment to complete.
+Project URL: [https://danny-nus.github.io/CodecFlow/](https://danny-nus.github.io/CodecFlow/).
 
-## Citation
+Local edits do not change the public website until committed, pushed, and deployed. This redesign does not publish the manuscript PDF or assert a publication venue, acceptance status, DOI, or arXiv identifier.
 
-If you use CodecFlow in your research, please cite:
+## Questions
 
-```bibtex
-@article{zhang2026codecflow,
-  title   = {CodecFlow: Efficient Bandwidth Extension via Conditional Flow Matching in Neural Codec Latent Space},
-  author  = {Zhang, Bowen and Zhao, Junchuan and McLoughlin, Ian and Wang, Ye and Madhukumar, A. S.},
-  journal = {arXiv preprint arXiv:2603.02022},
-  year    = {2026}
-}
-```
-
-## Contact
-
-For questions about the project or demo page, please open an issue in this repository or contact the authors through their institutional pages.
+Open a repository issue for website or sample problems. Include the test set, system name, and utterance ID when reporting an audio issue.
