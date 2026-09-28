@@ -26,7 +26,7 @@ The page follows the September 27, 2026 manuscript and preserves its abstract an
 
 There are 72 WAV files across three test sets. Each test set supplies one female and one male utterance shared across the baseline and ablation sections. TIMIT and LibriTTS use 16 kHz playback; VCTK uses 44.1 kHz playback. The 8 kHz input tracks are resampled to the playback rate. See [sample documentation](samples/README.md) for selection details and per-file metrics; these values are not aggregate paper results.
 
-All systems are displayed directly without horizontal scrolling. CodecFlow appears last in violet. Playing a sample pauses any other active sample.
+Listening comparisons are grouped by utterance: each female or male sample has its own bordered block containing every system. On desktop, the eight baseline systems use a compact 4 × 2 grid and the four ablation systems use a 4 × 1 grid; narrower screens reflow automatically. This keeps the same spoken content together for direct comparison. CodecFlow appears last in violet, and playing a sample pauses any other active sample.
 
 Each audio player shows its mel spectrogram by default. Click **Hide mel spectrogram** to collapse an individual preview. The button above each dataset expands or collapses all of its mel previews. Click a preview to enlarge the full, uncropped image.
 

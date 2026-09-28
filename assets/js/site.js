@@ -28,34 +28,24 @@ function buildDataset(key, data, section) {
   toggleAll.type = 'button';
   toggleAll.setAttribute('aria-label', `Hide all mel spectrograms: ${meta.name}, ${section}`);
   melToolbar.append(toggleAll);
-  const table = element('table', 'comparison-table');
-  table.setAttribute('aria-label', `${meta.name}, ${meta.rate}, ${section === 'baselines' ? 'baseline comparison' : 'ablation study'}`);
-  const head = element('thead');
-  const headRow = element('tr');
-  const systemHeader = element('th', '', 'System');
-  systemHeader.scope = 'col';
-  headRow.append(systemHeader);
+  const utteranceGroups = element('div', 'utterance-groups');
   const utterances = Object.entries(data.utterances);
   for (const [id, sample] of utterances) {
-    const th = element('th', '', `${sample.gender === 'F' ? 'Female' : 'Male'} · ${sample.duration_s} s`);
-    th.scope = 'col';
-    th.append(element('span', 'sample-id', id));
-    headRow.append(th);
-  }
-  head.append(headRow);
-  const body = element('tbody');
-  for (const method of order[section]) {
-    const system = data.sections[section][method];
-    const proposed = method === 'ours' || method === 'rfc_adaptedD_ours';
-    const row = element('tr', proposed ? 'proposed' : ['reference', 'input_8k', 'codec_rt'].includes(method) ? 'reference' : '');
-    const label = method === 'ours' ? 'CodecFlow' : system.label.replace(' (ours)', '');
-    const th = element('th', '', label);
-    th.scope = 'row';
-    if (proposed) th.append(element('span', 'proposed-tag', section === 'baselines' ? 'Proposed' : 'CodecFlow'));
-    row.append(th);
-    for (const [id, sample] of utterances) {
-      const td = element('td');
-      td.append(element('span', 'mobile-sample', `${sample.gender === 'F' ? 'Female' : 'Male'} · ${id}`));
+    const group = element('article', 'utterance-group');
+    const sampleHeader = element('div', 'utterance-header');
+    const sampleTitle = element('h4', '', `${sample.gender === 'F' ? 'Female' : 'Male'} sample`);
+    sampleHeader.append(sampleTitle, element('span', 'utterance-meta', `${id} · ${sample.duration_s} s`));
+    const systemGrid = element('div', `system-grid ${section === 'baselines' ? 'baseline-grid' : 'ablation-grid'}`);
+    systemGrid.setAttribute('aria-label', `${meta.name}, ${id}, ${section === 'baselines' ? 'baseline comparison' : 'ablation study'}`);
+    for (const method of order[section]) {
+      const system = data.sections[section][method];
+      const proposed = method === 'ours' || method === 'rfc_adaptedD_ours';
+      const card = element('article', `system-card ${proposed ? 'proposed' : ['reference', 'input_8k', 'codec_rt'].includes(method) ? 'reference' : ''}`);
+      const label = method === 'ours' ? 'CodecFlow' : system.label.replace(' (ours)', '');
+      const cardHeader = element('div', 'system-card-header');
+      cardHeader.append(element('span', 'system-name', label));
+      if (proposed) cardHeader.append(element('span', 'proposed-tag', section === 'baselines' ? 'Proposed' : 'CodecFlow'));
+      card.append(cardHeader);
       const audio = element('audio');
       audio.controls = true;
       audio.preload = 'metadata';
@@ -65,10 +55,10 @@ function buildDataset(key, data, section) {
       audio.firstChild.href = audio.src;
       audio.addEventListener('play', () => {
         document.querySelectorAll('audio').forEach(other => { if (other !== audio) other.pause(); });
-        row.classList.add('playing');
+        card.classList.add('playing');
       });
-      for (const event of ['pause', 'ended']) audio.addEventListener(event, () => row.classList.remove('playing'));
-      td.append(audio);
+      for (const event of ['pause', 'ended']) audio.addEventListener(event, () => card.classList.remove('playing'));
+      card.append(audio);
       const melDetails = element('details', 'sample-mel');
       melDetails.open = true;
       const summary = element('summary', '', 'Hide mel spectrogram');
@@ -92,18 +82,18 @@ function buildDataset(key, data, section) {
         toggleAll.textContent = allOpen ? 'Hide all mel spectrograms' : 'Show all mel spectrograms';
         toggleAll.setAttribute('aria-label', `${allOpen ? 'Hide' : 'Show'} all mel spectrograms: ${meta.name}, ${section}`);
       });
-      td.append(melDetails);
-      row.append(td);
+      card.append(melDetails);
+      systemGrid.append(card);
     }
-    body.append(row);
+    group.append(sampleHeader, systemGrid);
+    utteranceGroups.append(group);
   }
-  table.append(head, body);
   toggleAll.addEventListener('click', () => {
     const panels = [...block.querySelectorAll('.sample-mel')];
     const expand = !panels.every(panel => panel.open);
     panels.forEach(panel => { panel.open = expand; });
   });
-  block.append(header, melToolbar, table);
+  block.append(header, melToolbar, utteranceGroups);
   return block;
 }
 
